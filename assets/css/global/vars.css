@@ -58,3 +58,48 @@
     font-size: 1.5em;
     font-weight: lighter;
 }
+
+.button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.button-large{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+/* Button Primary Color */
+.button-primary{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    vertical-align: text-top;
+}
+.button-primary:hover{
+    background-color: var(--main-color-hovered);
+}
+.button-primary:active{
+    background-color: var(--main-color-actived);
+}
+
+/* Button Secondary Color */
+.button-secondary{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    vertical-align: text-top;
+}
+.button-secondary:hover{
+    background-color: var(--secondary-color-hovered);
+}
+.button-secondary:active{
+    background-color: var(--secondary-color-actived);
+}

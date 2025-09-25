@@ -3,30 +3,92 @@
     height: 600px;
     position: relative;
     overflow: hidden;
+
+    .image {
+        display: block;
+        object-fit: cover;
+        filter: blur(2px);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+        .logo {
+            width: 243px;
+        }
+
+        .slogan {
+            font-size: 1.6em;
+            color: white;
+        }
+    }
+
+    .banner-buttons {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .banner-buttons a {
+        max-width: 200px;
+        width: 100%;
+    }
 }
-.banner .image {
-    display: block;
-    object-fit: cover;
-    filter: blur(2px);
+
+.about-us {
+    .text {
+        font-size: 1.1em;
+    }
+
+    .mvv {
+        .mvv-item {
+            p {
+                font-size: 1.1em;
+
+                span {
+                    font-family: "DM Serif Text";
+                    color: var(--main-color);
+                    font-size: 1.8em;
+                }
+            }
+        }
+
+    }
+
+    .about-us-buttons {
+        text-align: center;
+    }
 }
-.banner .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.banner .content .logo {
-    width: 243px;
-}
-.banner .content .slogan {
-    font-size: 1.6em;
-    color: white;
-}
-.banner-buttons{
-    box-sizing: border-box;
-    width: 100%;
-}
-.banner-buttons a{
-    max-width: 200px;
-    width: 100%;
+
+.course {
+    background-color: var(--secondary-color);
+    min-height: 300px;
+
+    .content {
+        .img {
+            max-width: 510px;
+            width: 100%;
+
+            img {
+                width: 510px;
+                max-height: 550px;
+                object-fit: cover;
+            }
+        }
+
+        .course-text {
+            font-size: 1.1em;
+            width: 100%;
+
+            .text-title {
+                font-family: "DM Serif Text";
+                color: var(--main-color);
+                font-size: 1.4em;
+            }
+        }
+    }
 }
