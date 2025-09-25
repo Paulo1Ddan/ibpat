@@ -1,0 +1,32 @@
+/* Banner */
+.banner {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .image {
+    display: block;
+    object-fit: cover;
+    filter: blur(2px);
+}
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .content .logo {
+    width: 243px;
+}
+.banner .content .slogan {
+    font-size: 1.6em;
+    color: white;
+}
+.banner-buttons{
+    box-sizing: border-box;
+    width: 100%;
+}
+.banner-buttons a{
+    max-width: 200px;
+    width: 100%;
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "DM Serif Text";
+    src: url(../../fonts/DM_Serif_Text/DMSerifText-Regular.ttf);
+}
+
+:root{
+    --main-color: #0D5131;
+    --main-color-hovered: #0c472b;
+    --main-color-actived: #0a3923;
+    --secondary-color: #eaeaea;
+    --secondary-color-darker: #cfcfcf;
+    --secondary-color-hovered: #d7d7d7;
+    --secondary-color-actived: #c9c9c9;
+}
+
+.base-container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bi-geo::before {
+    position: relative;
+    font-size: larger;
+    right: 6px;
+}
+
+.bi-x::before {
+    position: relative;
+    font-size: larger;
+}
+
+.title-main {
+    font-family: "DM Serif Text";
+    color: var(--main-color);
+    font-size: 2.3em;
+}
+
+.title-secondary {
+    font-family: "DM Serif Text";
+    color: var(--secondary-color);
+    font-size: 2.3em;
+}
+
+.subtitle-main {
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.subtitle-secondary {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: lighter;
+}

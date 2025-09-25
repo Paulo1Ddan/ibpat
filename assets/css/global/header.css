@@ -1,0 +1,120 @@
+header {
+    background-color: #ffffff;
+    height: 120px;
+
+    .logo img {
+        height: 80px;
+    }
+
+    .menu {
+        list-style: none;
+
+        .menu-item {
+            position: relative;
+
+            .menu-link {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .menu-link:hover {
+                color: var(--main-color);
+
+            }
+
+        }
+
+        .current {
+            font-weight: bold;
+
+            .menu-link {
+                color: var(--main-color) !important;
+            }
+
+            ::after {
+                content: '';
+                position: absolute;
+                left: -5px;
+                right: -5px;
+                bottom: -2px;
+                border-bottom: var(--main-color) 2px solid;
+                width: calc(100% + 10px);
+            }
+        }
+
+    }
+
+    .responsive-btn {
+        font-size: 2.4em;
+        color: var(--main-color);
+        font-weight: bolder;
+        background: none;
+        border: none;
+        display: none;
+    }
+
+    .mobile-header {
+        height: 100vh;
+        width: 350px;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+
+        .responsive-btn {
+            position: absolute;
+            top: 35px;
+            right: 20px;
+        }
+
+        .menu-mobile {
+            list-style: none;
+            height: 100%;
+
+            .menu-link {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .menu-link:hover {
+                color: var(--main-color);
+
+            }
+        }
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        .logo img {
+            height: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 721px) {
+    header {
+        .mobile-header {
+            display: none !important;
+        }
+    }    
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        .menu {
+            display: none !important;
+        }
+
+        .responsive-btn {
+            display: block;
+        }
+
+    }
+}
