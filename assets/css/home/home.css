@@ -74,9 +74,11 @@
             width: 100%;
 
             img {
-                width: 510px;
+                width: 100%;
+                height: auto;
                 max-height: 550px;
                 object-fit: cover;
+                display: block;
             }
         }
 
@@ -89,6 +91,28 @@
                 color: var(--main-color);
                 font-size: 1.4em;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .course {
+        .content {
+            flex-direction: column !important;
+        }
+
+        .img {
+            max-width: 1024px !important;
+            margin: 0 auto;
+
+            img {
+                max-height: 350px !important;
+            }
+        }
+
+        .learn-more{
+            text-align: center;
         }
     }
 }
