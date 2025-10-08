@@ -1,0 +1,84 @@
+footer{
+    width: 100%;
+}
+.footer-content .logo-ipb img{
+    max-width: 248px;
+    width: 100%;
+}
+
+.footer-content .footer-nav .footer-nav-title{
+    font-family: "DM Serif Text";
+    color: var(--main-color);
+    font-size: 1.3em;
+}
+.footer-content .footer-nav .footer-nav-content ul{
+    list-style: none;
+}
+
+.footer-content .footer-nav .footer-nav-content .menu-item a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-content .social-media .social-media-title{
+    font-family: "DM Serif Text";
+    color: var(--main-color);
+    font-size: 1.3em;
+}
+.footer-content .social-media .social-media-content a{
+    text-decoration: none !important;
+    display: block;
+}
+.footer-content .social-media .social-media-content i{
+    font-size: 2.3em;
+    color: var(--main-color);
+}
+.footer-content .social-media .social-media-content span{
+    color: #000 !important;
+    vertical-align: super;
+}
+
+.footer-content .footer-contacts .footer-contacts-title{
+    font-family: "DM Serif Text";
+    color: var(--main-color);
+    font-size: 1.3em;
+}
+.footer-content .footer-contacts .footer-contacts-content{
+    max-width: 300px;
+}
+.footer-content .footer-contacts .footer-contacts-content i{
+    font-size: 2em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.footer-title{
+    text-align: center;
+    font-family: "DM Serif Text";
+    color: var(--main-color);
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-content .logo-ipb img{
+        width: 200px !important;
+    }
+    .footer-nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media{
+        max-width: 300px;
+        width: 100%;
+    }
+    .social-media-content{
+        display: flex;
+    }
+    .social-media-content a:last-child{
+        margin-left: 10px;
+    }
+}

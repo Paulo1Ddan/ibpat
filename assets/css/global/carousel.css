@@ -1,0 +1,50 @@
+.slick-next{
+    font-size: 2rem !important;
+    right: 0px !important;
+    z-index: 2;
+}
+.slick-next::before{
+    font-size: 1.5rem !important;
+    color: var(--main-color) !important;
+}
+.slick-prev{
+    left: -5px !important;
+    z-index: 2;
+    font-size: 2rem !important;
+}
+.slick-prev::before{
+    font-size: 1.5rem !important;
+    color: var(--main-color) !important;
+}
+
+.slick-dots li button::before{
+    font-size: 15px !important;
+}
+.slick-dots .slick-active button::before{
+    color: var(--main-color) !important;
+}
+
+.slide-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.slide-name {
+    font-family: "DM Serif Text";
+    color: #808080;
+    font-size: 2em;
+}
+
+.slide-text{
+    line-height: 1.6;
+}
+
+.slide-quote i{
+    vertical-align: bottom;
+    font-size: 2em;
+    color: #adadad;
+}
