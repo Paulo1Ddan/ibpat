@@ -10,12 +10,17 @@
 
 :root{
     --main-color: #0D5131;
+    --main-color-light: #137849;
     --main-color-hovered: #0c472b;
     --main-color-actived: #0a3923;
     --secondary-color: #eaeaea;
     --secondary-color-darker: #cfcfcf;
     --secondary-color-hovered: #d7d7d7;
     --secondary-color-actived: #c9c9c9;
+}
+
+.main-color{
+    color: #0D5131 !important;
 }
 
 .base-container{

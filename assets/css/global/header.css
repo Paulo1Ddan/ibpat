@@ -1,6 +1,6 @@
 header {
-    background-color: #ffffff;
     height: 100px;
+    transition: background-color 0.3s;
 
     .logo img {
         height: 80px;
@@ -13,49 +13,36 @@ header {
             position: relative;
 
             .menu-link {
-                color: #000000;
+                transition: all 0.3s;
+                color: #ffffff;
                 text-decoration: none;
             }
 
             .menu-link:hover {
-                color: var(--main-color);
+                color: var(--main-color-light) !important;
 
             }
 
-        }
-
-        .current {
-            font-weight: bold;
-
-            .menu-link {
-                color: var(--main-color) !important;
-            }
-
-            ::after {
-                content: '';
-                position: absolute;
-                left: -5px;
-                right: -5px;
-                bottom: -2px;
-                border-bottom: var(--main-color) 2px solid;
-                width: calc(100% + 10px);
-            }
         }
 
     }
 
     .responsive-btn {
         font-size: 2.4em;
-        color: var(--main-color);
+        color: #ffffff;
         font-weight: bolder;
         background: none;
         border: none;
         display: none;
     }
 
+    .bi-x-lg {
+        color: var(--main-color) !important;
+    }
+
     .mobile-header {
         height: 100vh;
-        width: 350px;
+        width: 80vw;
         background-color: #ffffff;
         position: fixed;
         top: 0;
@@ -90,6 +77,10 @@ header {
     }
 }
 
+.header-scrolled {
+    background-color: #ffffff;
+}
+
 @media screen and (max-width: 960px) {
     header {
         .logo img {
@@ -103,7 +94,7 @@ header {
         .mobile-header {
             display: none !important;
         }
-    }    
+    }
 }
 
 @media screen and (max-width: 720px) {

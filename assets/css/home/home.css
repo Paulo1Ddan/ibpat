@@ -1,142 +1,151 @@
 /* Banner */
 .banner {
-    height: 50vh;
-    position: relative;
-    overflow: hidden;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 
-    .image {
-        display: block;
-        object-fit: cover;
-        filter: blur(2px);
+  .image {
+    display: block;
+    object-fit: cover;
+    filter: blur(2px);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .content {
+    .logo {
+      width: 200px;
     }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+    .slogan {
+      font-size: 1.6em;
+      color: white;
     }
+  }
 
-    .content {
-        .logo {
-            width: 243px;
-        }
+  .banner-buttons {
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-        .slogan {
-            font-size: 1.6em;
-            color: white;
-        }
-    }
-
-    .banner-buttons {
-        box-sizing: border-box;
-        width: 100%;
-    }
-
-    .banner-buttons a {
-        max-width: 200px;
-        width: 100%;
-    }
+  .banner-buttons a {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 .about-us {
-    .text {
-        font-size: 1.1em;
+  .text {
+    font-size: 1.1em;
+  }
+
+  .mvv {
+    p {
+      font-size: 1.1em;
+
+      span {
+        font-family: "DM Serif Text";
+        color: var(--main-color);
+        font-size: 1.8em;
+      }
     }
+  }
 
-    .mvv {
-        .mvv-item {
-            p {
-                font-size: 1.1em;
+  .about-us-buttons {
+    text-align: center;
+  }
+}
 
-                span {
-                    font-family: "DM Serif Text";
-                    color: var(--main-color);
-                    font-size: 1.8em;
-                }
-            }
-        }
-
-    }
-
-    .about-us-buttons {
-        text-align: center;
-    }
+.about-us .teacher {
+  width: 230px;
+  height: auto;
+  flex: 0 0 calc(25% - 1rem);
+}
+.about-us .teacher .teacher-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  margin: 0 auto;
+}
+.about-us .teacher .teacher-name {
+  font-size: 1.3em;
+  color: var(--main-color);
+  font-family: "DM Serif Text";
 }
 
 .course {
-    background-color: var(--secondary-color);
-    min-height: 300px;
+  background-color: var(--secondary-color);
+  min-height: 300px;
+}
 
-    .content {
-        .img {
-            max-width: 510px;
-            width: 100%;
+.course .content .img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+}
+.course .content .text-title {
+  font-family: "DM Serif Text";
+  color: var(--main-color);
+  font-size: 1.4em;
+}
+.course .content .course-description {
+  font-size: 1.1em;
+  width: 100%;
+}
 
-            img {
-                width: 100%;
-                height: auto;
-                max-height: 550px;
-                object-fit: cover;
-                display: block;
-            }
-        }
+.course .content .course-subjects .subject{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+}
 
-        .course-text {
-            font-size: 1.1em;
-            width: 100%;
-
-            .text-title {
-                font-family: "DM Serif Text";
-                color: var(--main-color);
-                font-size: 1.4em;
-            }
-        }
-    }
+.course .content .course-subjects .subject-title{
+    color: var(--main-color);
+    font-family: "DM Serif Text";
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .feedback {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 .contact {
-    height: 550px;
-    background-color: var(--main-color);
-    overflow-y: hidden;
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--main-color);
 }
 
-.contact-form {
-    margin: 0 auto;
-    max-width: 760px;
-    background: #fff;
-    max-height: 350px !important;
-    height: 100%;
-
-    iframe {
-        width: 100%;
-        max-height: 350px !important;
-        height: 100%;
-    }
+.contact .btn-contact {
+  margin: 0 auto;
+  width: fit-content;
+  font-weight: 600;
 }
-
 
 @media screen and (max-width: 1024px) {
-    .course {
-        .content {
-            flex-direction: column !important;
-        }
-
-        .img {
-            max-width: 1024px !important;
-            margin: 0 auto;
-
-            img {
-                max-height: 350px !important;
-            }
-        }
-
-        .learn-more {
-            text-align: center;
-        }
+  .course {
+    .content {
+      flex-direction: column !important;
     }
+
+    .img {
+      max-width: 1024px !important;
+      margin: 0 auto;
+
+      img {
+        max-height: 350px !important;
+      }
+    }
+
+    .learn-more {
+      text-align: center;
+    }
+  }
 }
