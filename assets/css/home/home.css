@@ -112,6 +112,10 @@
     font-size: 1.4rem;
     cursor: pointer;
 }
+.course .content .course-subjects .subject-title span{
+    font-size: 0.8em !important;
+}
+
 
 .feedback {
   min-height: 500px;
