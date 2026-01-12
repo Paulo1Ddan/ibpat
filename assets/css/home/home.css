@@ -41,42 +41,27 @@
 
 .about-us {
   .text {
-    font-size: 1.1em;
+    font-size: 1.25em;
+    line-height: 2.125rem;
   }
 
   .mvv {
     p {
-      font-size: 1.1em;
+      font-size: 1.25em;
+      line-height: 2.125rem;
 
       span {
         font-family: "DM Serif Text";
         color: var(--main-color);
         font-size: 1.8em;
+
       }
     }
   }
 
-  .about-us-buttons {
-    text-align: center;
+  .mvv ul li{
+    font-size: 1.25rem;
   }
-}
-
-.about-us .teacher {
-  width: 230px;
-  height: auto;
-  flex: 0 0 calc(25% - 1rem);
-}
-.about-us .teacher .teacher-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 1.4rem;
-  margin: 0 auto;
-}
-.about-us .teacher .teacher-name {
-  font-size: 1.3em;
-  color: var(--main-color);
-  font-family: "DM Serif Text";
 }
 
 .course {
@@ -96,26 +81,10 @@
   font-size: 1.4em;
 }
 .course .content .course-description {
-  font-size: 1.1em;
+  font-size: 1.25rem;
+  line-height: 2.125rem;
   width: 100%;
 }
-
-.course .content .course-subjects .subject{
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 1.4rem;
-}
-
-.course .content .course-subjects .subject-title{
-    color: var(--main-color);
-    font-family: "DM Serif Text";
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.course .content .course-subjects .subject-title span{
-    font-size: 0.8em !important;
-}
-
 
 .feedback {
   min-height: 500px;
